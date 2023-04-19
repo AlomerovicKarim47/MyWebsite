@@ -1,0 +1,35 @@
+.contact{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    gap: clamp(3rem, 6vw, 7rem);
+}
+
+.contact-input{
+    position: relative;
+    display: flex;
+    flex-flow:column nowrap;
+}
+
+.contact-form{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.5rem;
+}
+
+.contact-input:nth-child(3), #contact-form-button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media (max-width: 481px){
+    .contact-form{
+        column-gap: 0;
+    }
+    .contact-input:nth-child(1), .contact-input:nth-child(2){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
