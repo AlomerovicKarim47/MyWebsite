@@ -24,6 +24,12 @@
     grid-column-end: 3;
 }
 
+.send-button:disabled{
+    cursor: default;
+    background-color: black;
+    color: chartreuse;
+}
+
 @media (max-width: 481px){
     .contact-form{
         column-gap: 0;
