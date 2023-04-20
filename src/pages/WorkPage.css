@@ -25,7 +25,8 @@
 
 .project{
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .project-filter{
@@ -98,23 +99,8 @@
     border-radius: 40px;
 }
 
-.project:nth-child(1) .project-filter{
-    background-color: rgba(0, 87, 128, 0.651);
-}
-
-.project:nth-child(1){
-    background-image: url("../images/TodoKalendar.png");
-}
-
-.project:nth-child(2){
-    background-image: url("../images/PlayOff.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} 
-
-.project:nth-child(2) .project-filter{
-    background-color: rgba(0, 128, 0, 0.651);
+.project .project-filter{
+    background-color: rgba(0, 0, 0, 0.747);
 }
 
 .projects{

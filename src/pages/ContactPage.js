@@ -39,7 +39,8 @@ const ContactPage = () => {
         const messageData = { name, email, message }
         try {
             await messageValidation.validate(messageData, {abortEarly:false})
-            MessageService.sendMessage(messageData)
+            await MessageService.sendMessage(messageData)
+            console.log("SENT")
         } catch (ValidationErrors) {
             setError(ValidationErrors.inner[0])
         }

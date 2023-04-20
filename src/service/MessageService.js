@@ -1,6 +1,9 @@
+import axios from 'axios'
+import config from '../config/config'
+
 class MessageService{
     static async sendMessage(messageData){
-        console.log(messageData)
+        await axios.post(`${config.BACKEND_URL}/email`, messageData)
     }
 }
 

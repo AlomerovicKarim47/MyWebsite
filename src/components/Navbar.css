@@ -108,6 +108,24 @@
     top:9px;
 }
 
+.github-icon{
+    position: relative;
+    z-index: 50;
+    width:40px;
+    height:40px;
+    background-image: url("../images/github-mark-white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:5px;
+    left:5px;
+}
+
+.github-icon a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width: 481px){
     .nav-burger-toggle{
         display: none;
@@ -143,6 +161,10 @@
 
     .nav-menu ul li a:hover::after{
         transform: scaleX(1);
+    }
+
+    .github-icon{
+        position: absolute;
     }
 }
 
