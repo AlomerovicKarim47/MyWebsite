@@ -10,7 +10,6 @@ const Navbar = () => {
     }
 
     return (
-
         <div className = "nav">
             <input id = "nav-burger-check" type = "checkbox"/>
             
@@ -24,7 +23,7 @@ const Navbar = () => {
                    <li><Link to = "/work">My Work</Link></li> 
                    <li><Link to = "/contact">Contact</Link></li> 
                 </ul>
-                <div class="github-icon">
+                <div className="github-icon">
                     <a target="_blank" href = "https://github.com/AlomerovicKarim47"></a>
                 </div>
             </nav>
