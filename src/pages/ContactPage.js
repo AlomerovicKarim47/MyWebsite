@@ -67,8 +67,11 @@ const ContactPage = () => {
             await MessageService.sendMessage(messageData)
             toggleButton(e.target)
             setShowToast(true)
-        } catch (ValidationErrors) {
-            setError(ValidationErrors.inner[0])
+        } catch (error) {
+            if (error.name === "ValidationError")
+                setError(error.inner[0])
+            else
+                throw error
         }
     }
 
