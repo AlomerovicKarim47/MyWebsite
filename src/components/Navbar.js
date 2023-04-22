@@ -11,7 +11,9 @@ const Navbar = () => {
 
     return (
         <div className = "nav">
-            <input id = "nav-burger-check" type = "checkbox"/>
+            <input 
+                onChange={(e) => document.body.style.overflowY = e.target.checked?"hidden":"unset"}
+                id = "nav-burger-check" type = "checkbox"/>
             
             <label htmlFor = "nav-burger-check" className = "nav-burger-toggle">
                 <div className = "nav-burger"></div>
@@ -23,9 +25,16 @@ const Navbar = () => {
                    <li><Link to = "/work">My Work</Link></li> 
                    <li><Link to = "/contact">Contact</Link></li> 
                 </ul>
-                <div className="github-icon">
-                    <a target="_blank" href = "https://github.com/AlomerovicKarim47"></a>
+                
+                <div className="links">
+                    <div className="github-icon">
+                        <a target="_blank" href = "https://github.com/AlomerovicKarim47"></a>
+                    </div>
+                    <div className="cv-icon">
+                        <a target='_blank' href = "/files/cv.pdf">CV</a>
+                    </div>
                 </div>
+                
             </nav>
 
             
